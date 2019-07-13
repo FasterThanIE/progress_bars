@@ -30,6 +30,13 @@
         return this;
     }
 
+    $.fn.destroyProgressBar = function()
+    {
+        delete progressBars[$(this).attr('id')];
+        console.log(progressBars);
+        $(this).remove();
+    }
+
     /**
      * @param {Number} amount Setting value of the progress bar
      * @param {Bool} animated If you want the animation of progress bar filling or not. Default: false
@@ -45,7 +52,7 @@
      */
     $.fn.getProgressBarValue = function()
     {
-        return progressBars[$(element).attr('id')]['currentValue'];
+        return progressBars[$(this).attr('id')]['currentValue'];
     }
 
     /**
@@ -86,5 +93,5 @@
         }
     }
 
-
+    
 }(jQuery));
