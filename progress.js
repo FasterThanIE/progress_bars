@@ -9,6 +9,7 @@
      */
     $.fn.createProgressBar = function(value = 100, initialValue = 0, options = {}) 
     {
+        $(this).append("<div class='__inner_progress'></div>");
         progressBars[$(this).attr('id')] = {
             totalValue : value,
             currentValue : initialValue,
