@@ -13,10 +13,15 @@
             <div class="__inner_progress"></div>
         </div>
 
+        <button id="test">Test</button>
+
         <script>
             $(document).ready(function() {
-                $("#progressBar1").createProgressBar(100, 20);
-                $("#progressBar1").setProgressBarColor("green");
+                $("#progressBar1").createProgressBar(100, 0).setProgressBarColor("green");
+
+                $("#test").click(function() {
+                    $("#progressBar1").setProgressBarValue(80, true);
+                });
             });
         </script>
 
