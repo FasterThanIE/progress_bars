@@ -9,13 +9,14 @@
     </head>
 
     <body>
-        <div class="__progress_bar margin">
-            <div id="progressBar1" class="__inner_progress"></div>
+        <div id="progressBar1" class="__progress_bar margin">
+            <div class="__inner_progress"></div>
         </div>
 
         <script>
             $(document).ready(function() {
-                $("#progressBar1").createProgressBar(500, 25);
+                $("#progressBar1").createProgressBar(100, 20);
+                $("#progressBar1").setProgressBarColor("green");
             });
         </script>
 
