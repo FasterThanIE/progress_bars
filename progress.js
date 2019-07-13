@@ -2,6 +2,7 @@
 
     var progressBars = [];
 
+    
     /**
      * @param {Number} value Total value of the progress bar
      * @param {Number} initialValue Value that the progress bar will start with. Automaticly calculated into percentages
