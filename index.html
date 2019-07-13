@@ -17,10 +17,14 @@
 
         <script>
             $(document).ready(function() {
-                $("#progressBar1").createProgressBar(100, 0).setProgressBarColor("green");
+                
+                $("#progressBar1").createProgressBar(200, 20, {
+                    animated: true, 
+                    color: "purple"
+                });
 
                 $("#test").click(function() {
-                    $("#progressBar1").setProgressBarValue(65);
+                    $("#progressBar1").setProgressBarValue(80);
                 });
             });
         </script>
