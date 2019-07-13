@@ -33,6 +33,7 @@
     $.fn.setProgressBarValue = function(amount, animated = false)
     {
         setProgressBarValue(this, amount, animated);
+        return this;
     }
 
     /**
@@ -60,9 +61,6 @@
             $(element).find(".__inner_progress").width(percentage+"%");
         }
     }
-
-
-
 
 
 }(jQuery));
