@@ -10,8 +10,15 @@
 
     <body>
         <div class="__progress_bar margin">
-            <div class="__inner_progress"></div>
+            <div id="progressBar1" class="__inner_progress"></div>
         </div>
+
+        <script>
+            $(document).ready(function() {
+                $("#progressBar1").createProgressBar(500, 25);
+            });
+        </script>
+
     </body>
 
 </html>
