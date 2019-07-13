@@ -2,7 +2,6 @@
 
     var progressBars = [];
 
-
     /**
      * @param {Number} value Total value of the progress bar
      * @param {Number} initialValue Value that the progress bar will start with. Automaticly calculated into percentages
@@ -38,6 +37,14 @@
     {
         setProgressBarValue(this, amount, animated);
         return this;
+    }
+
+    /**
+     * Returns progress bar current value
+     */
+    $.fn.getProgressBarValue = function()
+    {
+        return progressBars[$(element).attr('id')]['currentValue'];
     }
 
     /**
